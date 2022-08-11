@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BookStore</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="submit">Submit</string>
+    <string name="title_activity_new_account">NewAccount</string>
+    <string name="enter_Newusername">enter Username</string>
+    <string name="enter_your_name">enter your name</string>
+    <string name="age">Age</string>
+    <string name="enter_password_here">enter password here</string>
+</resources>
