@@ -7,64 +7,54 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/Username1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="99dp"
-        android:layout_marginTop="387dp"
-        android:layout_marginEnd="99dp"
-        android:layout_marginBottom="39dp"
+        android:id="@+id/login_Username"
+        android:layout_width="201dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
         android:autofillHints=""
         android:ems="10"
+        android:hint="@string/enter_username"
         android:inputType="textPersonName"
-        android:text="@string/enter_username"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/login_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="97dp"
-        android:layout_marginBottom="230dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/enter_password"
         android:inputType="textPersonName"
-        android:text="@string/enter_password"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/SubmitButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Username1"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/login_Username" />
 
     <Button
         android:id="@+id/SubmitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="155dp"
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="168dp"
-        android:layout_marginBottom="110dp"
         android:text="@string/submit"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/NewaccountButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/login_password" />
 
     <Button
         android:id="@+id/NewaccountButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="134dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="48dp"
         android:text="New Account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SubmitButton" />
 

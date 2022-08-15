@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_new_account">
 
     <EditText
-        android:id="@+id/username1"
+        android:id="@+id/newacc_username"
         android:layout_width="241dp"
         android:layout_height="48dp"
         android:layout_marginStart="36dp"
@@ -20,14 +20,14 @@
         android:inputType="textPersonName"
         android:text="@string/enter_Newusername"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/enteredPassword"
+        app:layout_constraintBottom_toTopOf="@+id/newacc_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name1"
+        app:layout_constraintTop_toBottomOf="@+id/newacc_name"
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/enteredPassword"
+        android:id="@+id/newacc_password"
         android:layout_width="241dp"
         android:layout_height="48dp"
         android:layout_marginStart="40dp"
@@ -40,14 +40,14 @@
         android:password="false"
         android:text="enter password here"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/confirmPassword"
+        app:layout_constraintBottom_toTopOf="@+id/newacc_confirmPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/username1"
+        app:layout_constraintTop_toBottomOf="@+id/newacc_username"
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/confirmPassword"
+        android:id="@+id/newacc_confirmPassword"
         android:layout_width="241dp"
         android:layout_height="48dp"
         android:layout_marginStart="40dp"
@@ -58,15 +58,15 @@
         android:inputType="textPersonName"
         android:text="confirm password"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/NewaccButton"
+        app:layout_constraintBottom_toTopOf="@+id/NewaccSubmitBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enteredPassword"
+        app:layout_constraintTop_toBottomOf="@+id/newacc_password"
         android:importantForAutofill="no" />
 
     <EditText
-        android:id="@+id/Age1"
+        android:id="@+id/newacc_age"
         android:layout_width="65dp"
         android:layout_height="40dp"
         android:layout_marginStart="32dp"
@@ -79,12 +79,12 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/name1"
+        app:layout_constraintStart_toEndOf="@+id/newacc_name"
         app:layout_constraintTop_toTopOf="parent"
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/name1"
+        android:id="@+id/newacc_name"
         android:layout_width="183dp"
         android:layout_height="43dp"
         android:layout_marginStart="40dp"
@@ -95,14 +95,14 @@
         android:inputType="textPersonName"
         android:text="@string/enter_your_name"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/username1"
-        app:layout_constraintEnd_toStartOf="@+id/Age1"
+        app:layout_constraintBottom_toTopOf="@+id/newacc_username"
+        app:layout_constraintEnd_toStartOf="@+id/newacc_age"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:autofillHints="" />
 
     <Button
-        android:id="@+id/NewaccButton"
+        android:id="@+id/NewaccSubmitBtn"
         android:layout_width="140dp"
         android:layout_height="51dp"
         android:layout_marginStart="123dp"
@@ -114,5 +114,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/newacc_confirmPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
